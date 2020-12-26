@@ -74,10 +74,42 @@
         <hr>
         <form action="https://www.youtube.com/results">
             <label for="busca">Busca en youtube</label>
-            <input type="text" id="busca" name="buscaforma">
+            <input type="text" id="busca" name="search_query">
             <button>Busca en Youtube</button>
         </form>
 
+        <hr>
+
+        <h2>boxes</h2>
+        <form action="/algo">
+            <input type="checkbox" name="agree" id="tos">
+            <label for="tos">Estoy de Acuerdo</label>
+
+            <p>
+                <input type="radio" name="tamano" id="XS" value="xs">
+                <label for="XS">Ultra pequeno</label>
+                <input type="radio" name="tamano" id="S" value="s">
+                <label for="S">Peque</label>
+                <input type="radio" name="tamano" id="M" value="m">
+                <label for="M">Mediano</label>
+                <input type="radio" name="tamano" id="G" value="g">
+                <label for="G">Grande</label>
+                <input type="radio" name="tamano" id="X" value="x">
+                <label for="X">Extra Grande</label>
+          
+            </p>
+
+            <select name="mascota" id="pet-id">
+                <option value="">Escoge tu mascota favorita</option>
+                <option value="pe">Perro</option>
+                <option value="ga">Gato</option>
+                <option value="ra">Raton</option>
+                <option value="ca">Caballo</option>
+            </select>
+
+
+            <button type="submit">Listo</button>
+        </form>
     </main>
     <hr>
     <footer>
