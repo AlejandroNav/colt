@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro al Marathon</title>
+    <style>
+        body {
+            margin: 5% auto;
+            max-width: 950px;
+            line-height: 1.5;
+            font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            background: #bbbaba;
+            color: #444444;
+            padding: 0 10px
+        }
+
+        a {
+            border-bottom: 1px solid #444444;
+            color: #444444;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="headphones.html">Principal</a>
+            </li>
+            <li>
+                <a href="Home">Audifonos</a>
+            </li>
+            <li>
+                <a href="roma.html">Roma</a>
+            </li>
+            <li>
+                <a href="Home">Grecia</a>
+            </li>
+            <li>
+                <a href="fake-login.html">Login</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Registro para la carrera</h1>
+        <form action="/marathonDB">
+
+            <div>
+                <label for="name1">Nombre </label>
+                <input type="text" name="nameform" id="name1" placeholder="Juan" required>
+                <label for="name2">Apellidos</label>
+                <input type="text" name="lastform" id="name2" placeholder="Perez" required>
+            </div>
+            <p>Escoge tu carrera:</p>
+            <div>
+                <input type="radio" name="race" id="five" value="100">
+                <label for="five">Carrera de 5k</label>
+            </div>
+            <div>
+                <input type="radio" name="race" id="hund" value="200">
+                <label for="hund">100 metros con obstaculos</label>
+            </div>
+            <div>
+
+                <input type="radio" name="race" id="univ" value="300">
+                <label for="univ">Universitaria</label>
+            </div>
+            <div>
+                <input type="radio" name="race" id="cost" value="400">
+                <label for="cost">Salto en costales de papas</label>
+            </div>
+            <hr>
+
+            <section>
+                <label for="correp">Dame tu correo</label>
+                <input type="email" name="correo" id="correo" required>
+                <label for="contr">Contrasena</label>
+                <input type="password" name="" id="" required>
+            </section>
+            <br>
+            <div>
+                <label for="sele">Escoge tu edad</label>
+                <select name="sele" id="sele">
+                    <option value="kid">Menor de 18</option>
+                    <option value="teen">18 a 30</option>
+                    <option value="grown">31 a 45</option>
+                    <option value="old">45+ </option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Registro">
+            </div>
+        </form>
+
+
+    </main>
+    <footer>
+        <ul>
+            <li>Contacto</li>
+            <li>Acerca de</li>
+        </ul>
+    </footer>
+</body>
+
+</html>
