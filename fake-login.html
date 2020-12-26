@@ -6,20 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fake Login page and Forms</title>
     <style>
-        <style>
         body {
             margin: 5% auto;
             background: #f2f2f2;
             color: #444444;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             font-size: 16px;
             line-height: 1.8;
             text-shadow: 0 1px 0 #ffffff;
             max-width: 73%;
-        }
-
-        code {
-            background: white;
         }
 
         a {
@@ -31,7 +26,6 @@
         a:hover {
             border-bottom: 0;
         }
-    </style>
     </style>
 </head>
 
@@ -56,23 +50,35 @@
         </ul>
     </nav>
     <hr>
-
     <main>
         <h1>Fake Login</h1>
-
         <form action="/tacos">
-            Dame tu nombre <input type="text" name="" id="" placeholder="Alejandro">
+            <p>
+                <label for="nombre">Dame tu nombre</label>
+                <input type="text" name="nombreform" placeholder="Alejandro" id="nombre">
+                <label for="contra">Dame tu pasaporte</label>
+                <input type="password" name="contraform" id="contra">
+            </p>
+            <p>
+                <label for="color">Dame tu color Favorito </label>
+                <input type="color" id="color" name="colorform">
+                <hr>
+                <label for="queso">Te gusta el Queso?</label>
+                <input type="checkbox" name="quesoform" id="queso">
 
-            Dame tu pasaporte <input type="password">
-
-            <br>
-            Dame tu color Favorito <input type="color">
+            </p>
+            <button>Manda info</button>
+            <button disabled="disabled">Nada</button>
+            <input type="reset" value="Reinicia Cuestionario">
+        </form>
+        <hr>
+        <form action="https://www.youtube.com/results">
+            <label for="busca">Busca en youtube</label>
+            <input type="text" id="busca" name="buscaforma">
+            <button>Busca en Youtube</button>
         </form>
 
-
     </main>
-
-
     <hr>
     <footer>
         <ul>
