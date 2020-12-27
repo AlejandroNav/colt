@@ -13,6 +13,11 @@ a {
     border-bottom: 2px solid #fe7f2d;
     color: #fe7f2d;
     text-decoration: none;
+
+}
+a:hover{
+    color: #b93726;
+    background-color: antiquewhite;
 }
 li a { /* Descendant selectors all anchors in lists */ 
     color: #52a0d4;
@@ -34,6 +39,9 @@ button,input {
     background: #233d4d;
     color: #eec0a1;
 }
+button:hover{
+    background-color: #992e1f;
+}
 #signup{
     color: #5a9ec9;
     background: #0f202b;
@@ -49,4 +57,6 @@ h1, h2{
     color: #ffdbdb;
     font-size: 14px;
 }
-
+::selection{
+    background-color: #eec0a1;
+}
