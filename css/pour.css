@@ -2,12 +2,19 @@ body {
     line-height: 1.2;
     font-family: Helvetica, Arial, sans-serif;
     background: #233d4d;
-    color: #fe7f2d;
+    color: #ea745f;
+    margin: 0px;
 }
 p{
     text-align: justify;
     line-height: 1.6;
     letter-spacing: 2px;
+    padding: 5px;
+    border: 5px solid #06151f;
+    border-radius: 10px;
+    background-color: #133144;
+    padding: 10px 15px;
+
 }
 a {
     border-bottom: 2px solid #fe7f2d;
@@ -35,9 +42,10 @@ h2 + button{
     color: black;
 }*/
 button,input {
-    font-size: 22px;
+    font-size: 20px;
     background: #233d4d;
     color: #eec0a1;
+    padding: 2px 13px;
 }
 button:hover{
     background-color: #992e1f;
@@ -48,6 +56,11 @@ button:hover{
 }
 h1, h2{
     color: #fe7f2d;
+    font-weight: 500;
+}
+h1{
+    font-weight: 600;
+    margin: 25px 30px;
 }
 .borderline{
     border: #fe7f2d;
@@ -59,4 +72,21 @@ h1, h2{
 }
 ::selection{
     background-color: #eec0a1;
+}
+section{
+    background-color: #0e2636;
+    width: 60%;
+    height: 160px;
+    border-radius: 10px;
+
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 8px;
+}
+nav{
+    border-radius: 10px;
+    background-color: #0e2636;
+    width: 70%;
+    padding: 10px;
+    margin: 10px 5px 10px 5px;
 }
