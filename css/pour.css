@@ -1,15 +1,52 @@
 body {
-    margin: 5% auto;
-    max-width: 60%;
-    line-height: 1.5;
+    line-height: 1.2;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    background: #e9c46a;
-    color: #e76f51;
-    padding: 0 10px
+    background: #233d4d;
+    color: #fe7f2d;
 }
 p{
     text-align: justify;
     line-height: 1.6;
     letter-spacing: 2px;
 }
+a {
+    border-bottom: 2px solid #fe7f2d;
+    color: #fe7f2d;
+    text-decoration: none;
+}
+li a { /* Descendant selectors all anchors in lists */ 
+    color: #52a0d4;
+}
+.post a {
+    color: #b93726;
+}
+
+h2 + button{
+    background-color: #df4e34;
+}
+
+/* Universal selector sirve para todo 
+*{
+    color: black;
+}*/
+button,input {
+    font-size: 22px;
+    background: #233d4d;
+    color: #eec0a1;
+}
+#signup{
+    color: #5a9ec9;
+    background: #0f202b;
+}
+h1, h2{
+    color: #fe7f2d;
+}
+.borderline{
+    border: #fe7f2d;
+}
+.tag{
+    background-color: #a04848;
+    color: #ffdbdb;
+    font-size: 14px;
+}
+
