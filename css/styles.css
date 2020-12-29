@@ -122,3 +122,17 @@ textarea{
     position: relative;
     right: 5%;
   }
+
+.circulo{
+
+    width: 130px;
+    height: 130px;
+    background-color: #a32100;
+    border-radius: 50%;
+
+}
+.circulo:hover{
+background-color: #681f0b;
+transition: 300ms;
+border-radius: 0%;
+}
