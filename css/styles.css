@@ -49,14 +49,14 @@ button{
 th{
     font-weight: 600;
 }
+
+
 nav li{
-    
+    padding: 0 0.7em ;
     display: inline;
-    padding: 5px 10px ;
-    margin: 5px;
+
 
 }
-
 
 nav {
     background-color: #d6b45d;
@@ -64,12 +64,17 @@ nav {
     text-align: center;
     position: sticky;
     top: 0;
-    left: 0;
     z-index: 9999;
     width: 100%;
-    padding: 10px 0;
+    padding: 1px 1px;
     
 }
+nav ul{
+    padding-inline-start: 0px;
+
+}
+
+
 footer li{
     display: inline;
     padding:5px;
