@@ -123,16 +123,48 @@ textarea{
     right: 5%;
   }
 
+  
+
 .circulo{
-
-    width: 130px;
-    height: 130px;
-    background-color: #a32100;
+    width: 100px;
+    height: 100px;
+    background-color: #86E7B8;
     border-radius: 50%;
+    border: solid 7px #064e24;
 
 }
-.circulo:hover{
-background-color: #681f0b;
-transition: 300ms;
-border-radius: 0%;
+.circulo2{
+    width: 100px;
+    height: 100px;
+    background-color: #93FF96;
+    border-radius: 50%;
+    border: solid  7px #064e24;
+
 }
+.circulo3{
+    width: 100px;
+    height: 100px;
+    background-color: #B2FFA8;
+    border-radius: 50%;
+    border: solid 7px  #064e24;
+
+}
+
+.circulo:hover{
+background-color: #00ff6a;
+transition: 1000ms 300ms;
+border-radius: 0%;
+transition-timing-function: cubic-bezier(0.37, 0, 0.63, 1);;
+}
+.circulo2:hover{
+    background-color: #00ff6a;
+    transition: 1000ms 300ms;
+    border-radius: 0%;
+    transition-timing-function: cubic-bezier(0.37, 0, 0.63, 1);;
+    }
+    .circulo:hover{
+        background-color: #00ff6a;
+        transition: 1000ms 300ms;
+        border-radius: 0%;
+        transition-timing-function: cubic-bezier(0.37, 0, 0.63, 1);;
+        }
