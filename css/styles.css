@@ -4,8 +4,8 @@ body {
     line-height: 1.5;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 18px;
-    background: #e9c46a;
-    color: #e76f51;
+    background: #e9c56acb;
+    color: #e76f51e7;
     padding: 0px 22%;
     margin: 0px;
 }
@@ -30,7 +30,7 @@ h3,h4{
     font-size: 1.7em;
 }
 h1,h2{
-    color:  #b84b30;
+    color:  #b84b30ee;
     text-align: center;
     font-weight: 750;
     letter-spacing: 3px;
@@ -59,10 +59,15 @@ nav li{
 
 
 nav {
-    padding: 10px;
-    background-color: #cca030;
+    background-color: #d6b45d;
     border-radius: 5px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    padding: 10px 0;
     
 }
 footer li{
@@ -109,5 +114,6 @@ textarea{
     text-align: center;
 }
 .map:hover {
-    width: 1600px ;
+    position: relative;
+    right: 5%;
   }
