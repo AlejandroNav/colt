@@ -4,10 +4,12 @@ body {
     line-height: 1.5;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 18px;
-    background: #e9c56acb;
+    background: #424B54;
     color: #e76f51e7;
     padding: 0px 22%;
     margin: 0px;
+    
+ 
 }
 p{
     text-align: justify;
@@ -37,15 +39,7 @@ h1,h2{
     text-transform:uppercase;
     font-size: 2.4em;
 }
-button{
-    color: #b84b30;
-    background-color: #ffe9b0;
-    font-size: 1.2em;
-    padding: 0 1.4em;
-    border-radius: 1em;
 
-    
-}
 th{
     font-weight: 600;
 }
@@ -59,7 +53,7 @@ nav li{
 }
 
 nav {
-    background-color: #d6b45d;
+    background-color: #1B1F22;
     border-radius: 5px;
     text-align: center;
     position: sticky;
@@ -83,16 +77,54 @@ footer li{
 img{
     width: 75%;
 }
+nav a:hover{
+    color: rgb(206, 127, 127);
+    box-shadow: 0 .7em .7em -.4em #e77558 ;
+    transform: translateY(-0.3em);
+    cursor: pointer ;
+}
+
+.noice{
+    background: none;
+    color: #ffa260;
+    border: 3px solid;
+    border-radius: 0%;
+    padding: 1em 2em;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+.noice:hover{
+    border-color: #f1ff5c;
+    color: white;
+    box-shadow: 0 .7em .7em -.4em #f1ff5c ;
+    transform: translateY(-0.3em);
+    cursor: pointer ;
+
+}
+
+button{
+    color: #b84b30;
+    background-color: none;
+    font-size: 1.2em;
+    padding: 0 1.4em;
+    border-radius: 1em;
+    border: solid;
+
+    
+}
 input{
     font-size: 1.05em;
     padding: 0 0.2em;
     border-radius: 0.2em;
+    border: solid;
 }
 label{
     font-size: 1.1em;
 }
 textarea{
     font-size: 1em;
+    border: solid;
 }select{
     font-size: 1em;
     padding: 0 0.2em;
@@ -161,10 +193,11 @@ transition-timing-function: cubic-bezier(0.37, 0, 0.63, 1);;
     transition: 1000ms 300ms;
     border-radius: 0%;
     transition-timing-function: cubic-bezier(0.37, 0, 0.63, 1);;
-    }
-    .circulo:hover{
+ }
+.circulo3:hover{
         background-color: #00ff6a;
         transition: 1000ms 300ms;
         border-radius: 0%;
         transition-timing-function: cubic-bezier(0.37, 0, 0.63, 1);;
-        }
+ }
+
