@@ -1,3 +1,21 @@
+body{
+    padding: none;
+    margin: none;
+    background-color: #3C787E;
+    font-family: 'Comfortaa', cursive;
+
+}
 img{
    width: 30%; 
+   margin: calc(3%/2);
+}
+
+nav{
+    text-transform: uppercase;
+    border-bottom: 3px solid #241623;
+    color: #241623;
+    width: 30%;
+    margin-left: 1.65%;
+    padding: 1.1em 0;
+    font-size: 1.6em;
 }
