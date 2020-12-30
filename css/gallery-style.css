@@ -1,21 +1,41 @@
 body{
-    padding: none;
-    margin: none;
-    background-color: #3C787E;
+    background-color: #3e7175;
     font-family: 'Comfortaa', cursive;
+    width: 65%;
+    /* border: 3px solid coral; */
 
 }
 img{
    width: 30%; 
    margin: calc(3%/2);
+   padding-bottom: 10px;
+   border-bottom: .2em solid  #4e2f4c;
+   border-radius:  15px 15px 0 0;
 }
 
 nav{
     text-transform: uppercase;
-    border-bottom: 3px solid #241623;
-    color: #241623;
+    border-bottom: .12em solid #41273f;
+    color: #382137;
     width: 30%;
     margin-left: 1.65%;
     padding: 1.1em 0;
-    font-size: 1.6em;
+    font-size: 1.8em;
+}
+
+#contenedor{ 
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+    margin: calc(3%/2);
+
+}
+#contenedor div{
+    width: 11%;
+    height: 90%;
+}
+#contenedor2{
+    display: flex;
+
+
 }
