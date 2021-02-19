@@ -48,14 +48,14 @@ body {
 
 #mainNavbar #dulceNombre {
     font-weight: 400;
-    font-size: 1.4em;
+    font-size: 2em;
     color: #FFC800;
     margin-left: 8px;
 }
 
 #mainNavbar a {
     color: #05E0E9;
-    font-size: 1.4em;
+    font-size: 1.9em;
 }
 
 #mainNavbar {
@@ -65,4 +65,49 @@ body {
 
 #mainNavbar a:hover {
     color: #FFC800;
+}
+#headingGroup{
+    font-weight: 500;
+}
+#headingGroup span{
+    font-weight: 700;
+    color: #ff9900;
+}
+
+#headingGroup h2{
+    font-size: 3.5em;
+    margin-left: 30px;
+    line-height: 1.5em;
+    padding-top: 10px;
+}
+
+@media(max-width:1400px) and (min-width: 1153px){
+    #headingGroup h2{
+        font-size: 2.5em;
+        line-height: 1.3em;
+    }  
+    #mainNavbar #dulceNombre {
+        font-size: 1.6em;
+        
+    }
+    
+    #mainNavbar a {
+        font-size: 1.5em;
+    }
+}
+
+
+@media(max-width: 1152px) and (min-width: 991px){
+    #headingGroup h2{
+        font-size: 2.2em;
+        line-height: 1.2em;
+    }  
+    #mainNavbar #dulceNombre {
+        font-size: 1.4em;
+        
+    }
+    
+    #mainNavbar a {
+        font-size: 1.3em;
+    }
 }
