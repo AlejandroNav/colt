@@ -50,13 +50,11 @@ body {
     font-weight: 400;
     font-size: 2em;
     color: #FFC800;
-    margin-left: 8px;
 }
 #mainNavbar #dulceNombre:hover {
     font-weight: 400;
     font-size: 2.1em;
     color: #4e1a3d;
-    margin-left: 8px;
     font-weight: 600;
 }
 
@@ -70,7 +68,7 @@ body {
 
 #mainNavbar {
     font-weight: 200;
-    margin-left: 10px;
+    padding-left: 18px;
 }
 
 #mainNavbar a:hover {
@@ -97,6 +95,7 @@ body {
 }
 #granLogo{
     background-color: #00cfd6;
+   
     
 }
 .titulos{
@@ -117,6 +116,12 @@ p{
 
 .feliz2{
     margin-top:70px;
+
+}
+.navbar.scrolled{
+    background-color: #ca6dab;
+    color: #200517;
+    transition: background .6s;
 
 }
 
@@ -206,7 +211,11 @@ p{
         font-size: 1.5em;
         padding: .5em .4em 1em .4em ;
     }
-
+    #granLogo{
+        background-color: #36a4a8;
+       
+        
+    }
 
 
 }

@@ -59,7 +59,7 @@
                         <h2>DULCECITO <span>/</span> DOLOR</h2>
                     </div>
                     <div class="col-lg-6 px-0 ">
-                        <img  id="granLogo" class="img-fluid px-0" src="imagenes\Copia de Dulce.png"
+                        <img id="granLogo" class="img-fluid px-0" src="imagenes\Copia de Dulce.png"
                             alt="Logo de Dulcecito dolor, helado con dos estrellas">
 
                     </div>
@@ -74,7 +74,7 @@
                 <div class="row align-items-center feliz1 px-0">
 
                     <div class="col-lg-6 order-2 px-0">
-                        <img class="img-fluid px-0" src="imagenes\erwan-hesry-OlQ-NaEyVmQ-unsplash.jpg" >
+                        <img class="img-fluid px-0" src="imagenes\erwan-hesry-OlQ-NaEyVmQ-unsplash.jpg">
                     </div>
 
                     <div class="col-lg-6 text-center order-1 order-lg-2">
@@ -105,7 +105,7 @@
                 <div class="row align-items-center feliz2">
 
                     <div class="col-lg-6 order-2 px-0">
-                        <img class="img-fluid" src="imagenes\tim-kilby-QVEJVA6plXY-unsplash.jpg" >
+                        <img class="img-fluid" src="imagenes\tim-kilby-QVEJVA6plXY-unsplash.jpg">
                     </div>
 
                     <div class="col-lg-6 text-center order-2 order-md-1">
@@ -158,6 +158,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function(){
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
 </body>
 
 </html>
