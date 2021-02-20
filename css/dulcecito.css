@@ -95,6 +95,10 @@ body {
 .logo1{
     width: 32%;
 }
+#granLogo{
+    background-color: #00cfd6;
+    
+}
 .titulos{
     font-size: 2.5em;
     font-weight: 700;
@@ -106,8 +110,15 @@ p{
     padding: 2em 1em 3em 1em;
     line-height: 1.4;
 }
+.feliz1{
+    margin-top: 70px;
 
-  
+}
+
+.feliz2{
+    margin-top:70px;
+
+}
 
 /* Custon CSS made by me for medi queries*/
 
