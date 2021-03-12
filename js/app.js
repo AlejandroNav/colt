@@ -26,3 +26,8 @@ document.querySelector('#banner').id = "banner"
 const pollPrincipal = document.querySelector('input');
 let ejemplo = pollPrincipal.getAttribute('type') 
 pollPrincipal.setAttribute('type', ejemplo)
+
+const silki = document.querySelector('h1');
+silki.style.color = '#ff005c';
+silki.style.fontSize= "95px"
+
