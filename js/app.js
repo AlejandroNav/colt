@@ -10,3 +10,19 @@ for (let link of allLinks) {
     link.style.textDecorationColor = 'magenta';
     link.style.textDecorationStyle = 'wavy'
 }
+
+const allImages = document.getElementsByTagName('img')
+
+for (const images of allImages) {
+    console.log(images.src)
+}
+
+const linkys = document.querySelectorAll('p a')
+for (const iterator of linkys) {
+    console.log(iterator.href)
+
+}
+document.querySelector('#banner').id = "banner"
+const pollPrincipal = document.querySelector('input');
+let ejemplo = pollPrincipal.getAttribute('type') 
+pollPrincipal.setAttribute('type', ejemplo)
