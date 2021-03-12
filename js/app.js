@@ -31,3 +31,6 @@ const silki = document.querySelector('h1');
 silki.style.color = '#ff005c';
 silki.style.fontSize= "95px"
 
+const h2 = document.querySelector('h2')
+h2.classList.add('purple')
+h2.classList.add('border')
