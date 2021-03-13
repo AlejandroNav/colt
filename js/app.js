@@ -64,3 +64,15 @@ for (let i = 1; i <= 899; i++) {
     pokemon.appendChild(label);
     pokedex.appendChild(pokemon)
 }
+
+const botonJS = document.querySelector('#clic2');
+
+botonJS.onclick = function () {
+    console.log('Me diste click');
+}
+
+function grito(){
+    console.log("OLA VERGHA")
+}
+
+botonJS.onmouseenter =  grito;
