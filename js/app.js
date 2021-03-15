@@ -67,12 +67,16 @@ for (let i = 1; i <= 899; i++) {
 
 const botonJS = document.querySelector('#clic2');
 
-botonJS.onclick = function () {
-    console.log('Me diste click');
-}
+// botonJS.onclick = function () {
+//     console.log('Me diste click');
+// }    INLINE STYLES OF EVENTS NEVER USE
 
-function grito(){
-    console.log("OLA VERGHA")
-}
+// function grito(){
+//     console.log("OLA VERGHA")
+// }
 
-botonJS.onmouseenter =  grito;
+// botonJS.onmouseenter =  grito;
+
+botonJS.addEventListener('click', function(){
+    alert("Le distes")
+})
