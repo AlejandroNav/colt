@@ -46,3 +46,31 @@ function colorize(){
         this.style.color = "white";
     }
 }
+
+
+const formy = document.querySelector("#formComment")
+
+formy.addEventListener('submit',function(e){
+    e.preventDefault();
+    const usu = formy.elements.user
+    const com =  formy.elements.comment
+    addComment(usu.value,com.value)
+    usu.value='';
+    com.value='';
+
+});
+
+const addComment= (usu,com) => {
+    const comentarioNuevo = document.createElement('li');
+    const btag = document.createElement('b');
+    btag.append(usu);
+    comentarioNuevo.append(btag);
+    comentarioNuevo.append(` - dice que : ${com}`);
+    const contenedorComs = document.querySelector('#comentarioTabla');
+    contenedorComs.append(comentarioNuevo);
+}
+
+
+// formComentario.addEventListener('submit',function(evt){
+//     console.log("submited")
+// });
