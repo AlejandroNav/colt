@@ -2,11 +2,17 @@ const randoColor = () =>{
     const r = Math.floor(Math.random()*255)
     const g = Math.floor(Math.random()*255)
     const b = Math.floor(Math.random()*255)
-    return `rgb(${r},${g},${b})`
+    let isDark = false
+    if (r+g+b <= 220 || r <= 40  && g <= 200 || g <= 40  || b <= 40 && g <= 200 ) {
+        isDark = true
+    }
+    return [`rgb(${r},${g},${b})`,isDark] 
+
 }
 const boto = document.querySelector("#backButton")
 boto.addEventListener('click', function(){
-    document.body.style.backgroundColor = randoColor()
+    let newCol = randoColor()
+    document.body.style.backgroundColor = newCol[0]
 })
 const allBoton = document.querySelectorAll(".colo")
 for (const iterator of allBoton) {
@@ -15,9 +21,28 @@ for (const iterator of allBoton) {
 const allH2s = document.querySelectorAll("h2")
 for (const iterator of allH2s) {
     iterator.addEventListener("click",colorize)
+    // iterator.addEventListener("keydown",colorize)
 }
+
+const input1 = document.querySelector("#inp")
+input1.addEventListener('keydown',colorize)
+
+const input = document.querySelector("#inp")
+input.addEventListener('keydown',function(evt){
+    console.log("abajo " + evt.key + " " + evt.code )
+})
+
+window.addEventListener('keydown' ,function(evt){
+    if (evt.code=="ArrowUp") {
+        console.log("EN OF Fucking WOerld")
+    }
+})
+
 function colorize(){
     const nuevoColor = randoColor()
-    this.style.backgroundColor = nuevoColor;
-    this.innerText= nuevoColor;
+    this.style.backgroundColor = nuevoColor[0];
+    this.innerText= nuevoColor[0];
+    if (nuevoColor[1]) {
+        this.style.color = "white";
+    }
 }
