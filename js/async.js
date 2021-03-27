@@ -2,6 +2,7 @@
 const delayColor = (newColor, delay, doNext) => {
     setTimeout(() => {
         document.body.style.background = newColor;
+        doNext();
     }, delay)
 }
 
