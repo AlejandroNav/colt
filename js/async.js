@@ -24,7 +24,7 @@ for (let i = 0, p = Promise.resolve(); i < 24; i++) {
             document.body.style.backgroundColor = colors[i];
             nombre.innerText = colors[i]
             resolve();
-        }, 100)
+        }, 1300)
     ));
 }
 
@@ -46,7 +46,8 @@ const req = new XMLHttpRequest();
 
 req.onload = function () {
     console.log("REQUEST BEIN TERMINADA");
-    console.log(this);
+    const data1 = JSON.parse(this.responseText);
+    console.log(data1.ticker.price);
 }
 req.onerror = function () {
     console.log("nunca contesto la api");
