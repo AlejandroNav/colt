@@ -40,3 +40,18 @@ helloW()
 .catch(err =>{
     console.log("Promesa recehzada con: ", err)
 })
+
+
+const req = new XMLHttpRequest();
+
+req.onload = function () {
+    console.log("REQUEST BEIN TERMINADA");
+    console.log(this);
+}
+req.onerror = function () {
+    console.log("nunca contesto la api");
+    console.log(this);
+}
+
+req.open('GET','https://api.cryptonator.com/api/ticker/btc-usd');
+req.send();
