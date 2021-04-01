@@ -34,12 +34,12 @@ const helloW = async () => {
 }
 
 helloW()
-.then(data =>{
-    console.log("Promesa resuelta con: ", data)
-})
-.catch(err =>{
-    console.log("Promesa recehzada con: ", err)
-})
+    .then(data => {
+        console.log("Promesa resuelta con: ", data)
+    })
+    .catch(err => {
+        console.log("Promesa recehzada con: ", err)
+    })
 
 
 const req = new XMLHttpRequest();
@@ -54,5 +54,51 @@ req.onerror = function () {
     console.log(this);
 }
 
-req.open('GET','https://api.cryptonator.com/api/ticker/btc-usd');
-req.send();
+// req.open('GET', 'https://api.cryptonator.com/api/ticker/btc-usd');
+// req.send();
+
+// fetch('https://api.cryptonator.com/api/ticker/btc-usd')
+//     .then(res => {
+//         console.log("response a partsear", res);
+//         return res.json()
+//     })
+//     .then(data => {
+//         console.log("response parseada:", data.ticker.target);
+
+//     })
+//     .catch(err => {
+//         console.log("Oh no erores", err);
+//     })
+
+const bitPrice = async () => {
+    try {
+        console.log("wawa wewea");
+        const res = await fetch('https://api.cryptonator.com/api/ticker/btc-usd');
+        const data = await res.json()
+        console.log(`El precio de Bitcoin es de ${data.ticker.price} ${data.ticker.target}`);
+    } catch (error) {
+        console.log("errores: ", error);
+    }
+}
+
+bitPrice();
+
+axios.get("https://api.cryptonator.com/api/ticker/btc-usd")
+    .then(res => {
+        console.log(res.data.ticker.price);
+    })
+    .catch(err => {
+        console.log("error de ", err);
+    })
+
+const divJoke = document.querySelector('#joke')
+const button = document.querySelector('button')
+
+const dadJoke = async () => {
+    const config = { headers: { Accept: 'application/json' } }
+    const res = await axios.get("https://icanhazdadjoke.com/", config);
+    divJoke.innerHTML = res.data.joke
+    
+}
+dadJoke()
+button.addEventListener('click',dadJoke)
