@@ -9,12 +9,16 @@
         body {
             transition: .3s background-color;
         }
-
         h1 {
             font-size: 5em;
-            margin: 25% auto;
+            margin: 15% auto;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
+        }
+        img{
+            margin: 15px;
+            border: solid 5px rgb(255, 255, 255);
+            border-radius: 15px;
         }
     </style>
 </head>
@@ -24,6 +28,15 @@
     <h3>More info</h3> 
     <button>chistes</button>
     <ul id="joke">chiste</ul>
+
+<div>
+    <h1>Series</h1>
+    <form action="" id="searchForm">
+        <input type="text" placeholder="Search TV show title" name='query'>
+        <button>Buscar</button>
+    </form>
+</div>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js\async.js"></script>
 </body>

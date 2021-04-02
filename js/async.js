@@ -102,3 +102,18 @@ const dadJoke = async () => {
 }
 dadJoke()
 button.addEventListener('click',dadJoke)
+
+
+// *****************Parte del app de tv***********************
+const form = document.querySelector('#searchForm')
+
+form.addEventListener('submit', async function (e){
+    e.preventDefault();
+    const searchTerm = form.elements.query.value;
+    console.log(searchTerm);
+    const result = await axios.get(`http://api.tvmaze.com/singlesearch/shows?q=${searchTerm}`)
+    console.log(result.data.image.medium);
+    const img = document.createElement('IMG');
+    img.src = result.data.image.medium
+    document.body.append(img)
+})
