@@ -15,4 +15,4 @@ fs.mkdir ('Dogs', {recursive:true},(err) =>{
 });
 console.log("after mkdir !!!!!!!");
 
-fs.mkdirSync(args[1]);
+fs.mkdirSync(args[1]);   
