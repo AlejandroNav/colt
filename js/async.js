@@ -1,7 +1,7 @@
 
 const colors = ["Chartreuse", "FireBrick", "LightSalmon", "OliveDrab", "Snow",
     "Chocolate", "FloralWhite", "LightSeaGreen", "Orange", "SpringGreen",
-    "Coral", "ForestGreen", "LightSkyBlue", "OrangeRed", "SteelBlue",
+    "Coral", "ForestGreen", "LightSkyBlue","SteelBlue",
     'CornFlowerBlue', "Fuchsia", "LightSlateGray", "Orchid", "Tan",
     "Cornsilk", "Gainsboro", "LightSteelBlue", "PaleGoldenRod", "Teal"]
 
