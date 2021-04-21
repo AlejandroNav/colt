@@ -3,7 +3,7 @@ html{
     font-family: 'Open Sans',sans-serif ; 
 }
 body{
-    background-color: #3d84c7;justify-content: end;
+    background-color: rgb(106, 163, 79);justify-content: end;
     display: flex;
     justify-content: center;
     align-items: center;
