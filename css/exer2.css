@@ -37,3 +37,26 @@ div {
     background-color: beige;
     transform: scale(1.2);
 }
+
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    padding: 1em 2em;
+    margin: 50px;
+    background-color: #023047;
+    color: #ee9b00;
+    border: 3px solid;
+    transition: all 0.4s;
+}
+
+button:hover {
+    border-color: #baee00;
+    color: rgb(219, 241, 217);
+    box-shadow: 0 0.5em 0.5em -.2em #a7ee00;
+    transform: translateY(-6px);
+    cursor: pointer;
+}
+
+main {
+    background-color: #023047;
+}
