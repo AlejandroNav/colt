@@ -1,18 +1,25 @@
 section{
-    width: 500px;
-    height: 320px;
+    width: 900px;
+    height: 620px;
     background-color: rgb(74, 77, 218);
 }
+div{
+    display: inline-block;
+    width: 250px;
+    height: 150px;
+    border: 1px solid black;
+
+}
 #rgba{
-    width: 50%;
-    height: 30%;
     background-color: rgba(212, 235, 235, 0.2);
 }
-
 #opacity{
-    width: 50%;
-    height: 40%;
-    float: right;
     background-color: brown;
-    opacity: .4;
+    opacity: .2;
+    position: relative;
+    top: 150px;
+
+}
+#tres{
+
 }
