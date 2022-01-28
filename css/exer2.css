@@ -1,28 +1,39 @@
-section{
+section {
     width: 900px;
     height: 620px;
     background-color: rgb(74, 77, 218);
 }
-div{
-    display: inline-block;
-    width: 261px;
-    height: 145px;
-    border:  solid black;
-    border-width: 2px 3px 1px;
-    border-radius: 15px;
 
+div {
+    display: inline-block;
+    width: 201px;
+    height: 201px;
+    border: solid black;
+    border-width: 3px;
+    border-radius: 15px;
 }
-#rgba{
+
+#rgba {
     background-color: rgba(212, 235, 235, 0.9);
-    padding-left: 60px;
 }
-#opacity{
+
+#opacity {
     background-color: rgb(202, 26, 26);
     opacity: .4;
-    position: relative;
-    top: 150px;
-
+    /*  position: relative;
+    top: 150px; */
+    transform: rotate(345deg);
+    transform-origin: top right;
 }
-#tres{
-padding-top: 10%;
+
+#tres {
+    position: fixed;
+    border-radius: 50%;
+    transition: .9s .2s;
+}
+
+#tres:hover {
+    position: fixed;
+    background-color: beige;
+    transform: scale(1.2);
 }
