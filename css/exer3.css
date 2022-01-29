@@ -6,13 +6,19 @@ html {
 #container {
     background-color: rgb(168, 41, 41);
     width: 90%;
-    height: 500px;
+    height: 300px;
     margin: 0 auto;
-    border: 15px solid rgb(88, 6, 6);
+    border: 5px solid rgb(88, 6, 6);
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#container div {
+    width: 120px;
+    height: 100px;
 }
 
 #container div {
