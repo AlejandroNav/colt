@@ -20,11 +20,11 @@ body {
     background-color: #FFEEAD;
     padding: 1em 2em;
     width: 100%;
-    max-width: 960px;
     display: flex;
     flex-direction: column;
     text-align: center;
     text-transform: uppercase;
+    max-width: 1020px;
 }
 
 .pricing-plan {
@@ -37,17 +37,20 @@ body {
 
 .pricing-img {
     margin-bottom: 3em;
+    max-width: 300px;
 }
 
 .pricing-header {
     color: #e99546;
     font-weight: 600;
     letter-spacing: 1px;
+    font-size: 1.6em;
 }
 
 .pricing-features {
     margin: 2em 0 1em;
-    color: #ff7d04;
+    color: #50a87f;
+    font-size: 1.2em;
 }
 
 .pricing-features-item {
@@ -68,4 +71,36 @@ body {
     display: block;
     font-size: 2em;
     font-weight: 800;
+}
+
+.pricing-button {
+    border: 3px solid #D9534F;
+    border-radius: 6px;
+    padding: .7em 1.8em;
+    display: inline-block;
+    margin: 1em 0 2em;
+    text-decoration: none;
+    color: #D9534F;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+    color: #ffffff;
+    background-color: #ffae61;
+}
+
+@media (min-width: 900px) {
+    .panel {
+        width: 100%;
+        flex-direction: row;
+        border-radius: 1.6em;
+    }
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 2px solid #D9534F;
+        padding: 1em 1.3em;
+    }
+    .pricing-plan:last-child {
+        border-right: none;
+    }
 }
