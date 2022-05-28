@@ -29,15 +29,15 @@ function updateScores(player, opponent) {
 }
 
 
-p1.button.addEventListener('click', function () {
+p1.button.addEventListener('click', function() {
     updateScores(p1, p2)
 })
-p2.button.addEventListener('click', function () {
+p2.button.addEventListener('click', function() {
     updateScores(p2, p1)
 })
 
 
-winningScoreSelect.addEventListener('change', function () {
+winningScoreSelect.addEventListener('change', function() {
     winningScore = parseInt(this.value);
     reset();
 })
@@ -46,7 +46,7 @@ resetButton.addEventListener('click', reset)
 
 function reset() {
     isGameOver = false;
-    for (let p of [p1, p2]) {
+    for (let p of[p1, p2]) {
         p.score = 0;
         p.display.textContent = 0;
         p.display.classList.remove('has-text-success', 'has-text-danger');
