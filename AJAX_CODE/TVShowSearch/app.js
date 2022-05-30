@@ -10,9 +10,9 @@ form.addEventListener('submit', async function(e) {
 })
 
 const makeImages = (shows) => {
-    for (let result of shows) {
-        const imagen = document.createElement('IMG');
-        imagen.src = result.show.image.medium;
-        document.body.append(imagen)
-    }
-}
+        for (let result of shows) {
+            const imagen = document.createElement('IMG');
+            imagen.src = result.show.image.medium;
+            document.body.append(imagen)
+        }
+    } //starting oop and clases
