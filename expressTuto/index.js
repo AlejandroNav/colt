@@ -7,7 +7,7 @@ const app = express()
 //})
 app.get('/', (req, res) => {
     console.log("I got a request");
-    res.send('<h3>This is the root  </h3>')
+    res.send('<h3>This is the root and </h3>')
 })
 app.get('/cats', (req, res) => {
     console.log("I got a request");
