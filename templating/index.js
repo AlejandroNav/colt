@@ -16,7 +16,7 @@ app.get('/r/:subreddit', (req, res) => {
     res.render('subreddit', { subreddit })
 })
 app.get('/rand', (req, res) => {
-    res.render('random')
+    res.render('random') //starting the reddit
 })
 
 app.listen(3000, () => {
