@@ -11,7 +11,10 @@ app.get('/', (request, response) => {
     response.render('home.ejs')
         //console.log('this is the request from main page', request);
 })
-
+app.get('/r/:subreddit', (req, res) => {
+    const { subreddit } = req.params
+    res.render('subreddit', { subreddit })
+})
 app.get('/rand', (req, res) => {
     res.render('random')
 })
